@@ -6,4 +6,9 @@ public class Baseball implements Coach {
     {
         return "test IOC by XML <bean> ";
     }
+
+    @Override
+    public String getDailyFortune() {
+        return null;
+    }
 }
