@@ -4,6 +4,6 @@ public class Baseball implements Coach {
     @Override
     public String getDailyWorkout()
     {
-        return "test IOC";
+        return "test IOC by XML <bean> ";
     }
 }
