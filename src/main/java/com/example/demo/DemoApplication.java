@@ -8,7 +8,7 @@ public class DemoApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(DemoApplication.class, args);
-		Coach thecoach = new Baseball();
+		Coach thecoach = new TrackCoach();
 		System.out.println( thecoach.getDailyWorkout());
 	}
 
