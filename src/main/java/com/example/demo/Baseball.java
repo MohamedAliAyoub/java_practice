@@ -1,6 +1,7 @@
 package com.example.demo;
 
-public class Baseball {
+public class Baseball implements Coach {
+    @Override
     public String getDailyWorkout()
     {
         return "test IOC";
