@@ -1,14 +1,21 @@
 package com.example.demo;
 
 public class Baseball implements Coach {
-    @Override
-    public String getDailyWorkout()
+
+    private FortuneService fortuneService;
+    public   Baseball(FortuneService theFortuneService)
     {
-        return "test IOC by XML <bean> ";
+        fortuneService = theFortuneService;
+    }
+
+
+    @Override
+    public String getDailyWorkout() {
+        return "test";
     }
 
     @Override
     public String getDailyFortune() {
-        return null;
+        return fortuneService.getFortune();
     }
 }

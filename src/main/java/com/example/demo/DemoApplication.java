@@ -7,13 +7,14 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 @SpringBootApplication
 public class DemoApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(DemoApplication.class, args);
-		ClassPathXmlApplicationContext context =
-				new ClassPathXmlApplicationContext("applicationContext.xml");
-		Coach thecoach = context.getBean("myCoach" , Coach.class);
-		System.out.println( thecoach.getDailyWorkout());
-		context.close();
-	}
+
+    public static void main(String[] args) {
+        SpringApplication.run(DemoApplication.class, args);
+
+        TrackCoach theCoach = new TrackCoach();
+        System.out.println(theCoach.getDailyFortune());
+        System.out.println(theCoach.getDailyWorkout());
+
+    }
 
 }
